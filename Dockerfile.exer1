@@ -1,0 +1,4 @@
+FROM sequenceiq/hadoop-docker
+
+RUN mkdir /root/exer1
+COPY exer1 /root/exer1
