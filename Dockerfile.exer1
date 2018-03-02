@@ -1,4 +1,4 @@
 FROM sequenceiq/hadoop-docker
 
-RUN mkdir /root/exer1
-COPY exer1 /root/exer1
+RUN mkdir -p /cloudmesh/exer1
+COPY exer1 /cloudmesh/exer1
