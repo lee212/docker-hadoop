@@ -1,0 +1,5 @@
+FROM sequenceiq/hadoop-docker
+
+RUN mkdir -p /cloudmesh/pagerank
+COPY pagerank /cloudmesh/pagerank
+ENV PATH="${HADOOP_PREFIX}/bin:${PATH}"

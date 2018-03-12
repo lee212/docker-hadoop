@@ -6,17 +6,9 @@ if [ $# -ne 3 ]; then
     exit -1
 fi
 
-# clean existing compiled class
-echo "Clean built java class and jar"
-ant clean
-
-# compile your code and shows errors if any
-echo "Compiling source code with ant"
-ant
-
 if [ -f dist/HadoopPageRankMooc.jar ]
 then
-    echo "Source code compiled!"
+    echo "jar is reaty to run a program!"
 else
     echo "There may be errors in your source code, please check the debug message."
     exit 255
@@ -30,6 +22,6 @@ $HADOOP_PREFIX/bin/hadoop jar dist/HadoopPageRankMooc.jar indiana.cgl.hadoop.pag
 
 # capture the standard output
 rm -rf output.pagerank
-hadoop dfs -get output.pagerank .
+$HADOOP_PREFIX/bin/hadoop dfs -get output.pagerank .
 
 echo "PageRank Finished execution, see results in output.pagerank/ directory."
