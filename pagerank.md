@@ -59,7 +59,7 @@ localhost: starting nodemanager, logging to /usr/local/hadoop/logs/yarn-root-nod
 
 ## Run PageRank
 
-The script is provided which uploads a input file to HDFS and runs Hadoop with PageRank (jar) program.
+The script is provided which uploads an input file to HDFS and runs Hadoop with PageRank (jar) program.
 
 ```
 cd /cloudmesh/pagerank
