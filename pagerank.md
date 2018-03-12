@@ -1,6 +1,6 @@
 # QuickStart to PageRank
 
-This assignment provides a PageRank tutorial running on Hadoop. 
+This assignment provides a PageRank tutorial running on Docker Hadoop. 
 
 ## Description
 	  
