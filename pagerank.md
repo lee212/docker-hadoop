@@ -18,7 +18,7 @@ than a predefined threshold that controls the accuracy of the output results.
 
 `sudo docker run -it lee212/e222:pagerank /etc/bootstrap.sh -bash`
 
-Note that it may take several minutes 1) to download docker image, and 2) to start hadoop components.
+Note that it may take several minutes for the first time, 1) to download docker image, and 2) to start hadoop components.
 
 Example output message during this step is like:
 
